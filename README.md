@@ -6,7 +6,7 @@ This is the **master template** used to create all new projects.
 
 It defines a single, consistent directory structure so that every project — regardless of language, framework, or scope — starts from the same known layout. Anyone (or any tool) moving between projects can rely on finding the same things in the same places.
 
-The template is intentionally empty. It ships no code, no configuration, and no dependencies — only the directory skeleton and the `.gitkeep` markers that allow Git to preserve otherwise-empty directories. Structure is the deliverable; content belongs to the projects created from it.
+The template ships no application code, no configuration, and no dependencies. It provides three things: the directory skeleton, the `.gitkeep` markers that allow Git to preserve otherwise-empty directories, and the standards library in [`docs/standards/`](docs/standards/README.md) that defines how work is performed in every project created from it. Structure and standards are the deliverable; application content belongs to the projects.
 
 This directory is a **reference copy**. It is never used as a working project itself. See [Rules](#rules).
 
@@ -38,9 +38,12 @@ This directory is a **reference copy**. It is never used as a working project it
 | `developer` | Internal engineering documentation: conventions, workflows, debugging guides, and contributor-facing notes. |
 | `references` | External material worth preserving: specifications, standards, vendor documentation, and research. |
 | `setup` | Installation, environment configuration, and getting-started instructions. |
+| `standards` | The standards library: the rules governing how work is performed in this repository and in every project created from it. Indexed in [`docs/standards/README.md`](docs/standards/README.md). |
 | `user` | End-user documentation: guides, tutorials, and manuals for people using the software. |
 
 ## How to Create a New Project
+
+> The absolute paths in the examples below are local examples from one machine. Substitute your own template and project locations.
 
 ### 1. Copy the template
 
@@ -125,7 +128,5 @@ git commit -m "Initial commit: project structure from Project-Template"
 
 The following files are planned for this template but not yet present:
 
-- [ ] **`CLAUDE.md`** — Project context and instructions for Claude Code sessions.
 - [ ] **`CONTRIBUTING.md`** — Contribution guidelines, branch naming, and pull request conventions.
 - [ ] **`LICENSE`** — License terms. To be determined per project.
-- [ ] **`CHANGELOG.md`** — Version history, following [Keep a Changelog](https://keepachangelog.com/).

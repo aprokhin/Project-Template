@@ -2,6 +2,20 @@
 
 Instructions for Claude Code when working in this repository and in any project created from it.
 
+## Standards Library
+
+The standards library in [`docs/standards/`](docs/standards/README.md) is **authoritative for repository behavior.** It defines how work is performed here — decision ownership, change authorization, verification, repository structure, documentation, Git, security, and testing — and it carries the detail this file summarizes.
+
+Read [`docs/standards/README.md`](docs/standards/README.md) at the start of substantive work, and follow the standards that govern the task at hand. [`docs/standards/project/working-agreement.md`](docs/standards/project/working-agreement.md) is the root standard; every other standard depends on it.
+
+**Precedence:**
+
+1. Where this file and a standard differ on how work is performed, **the standard governs.**
+2. Where two standards differ, the more specific one governs within its domain.
+3. A genuine conflict between standards is a defect in the library. Report it to the user; do not resolve it at runtime.
+
+The sections below remain in force as the summary of that library. They are not a substitute for reading the standard that owns a rule.
+
 ## Source of Truth
 
 **The repository is the source of truth.**
@@ -55,6 +69,7 @@ After structural or architectural changes, update the appropriate documentation,
 |---|---|
 | `README.md` | Structure, setup, or the project's purpose changed. |
 | `CLAUDE.md` | Working rules or conventions for this repository changed. |
+| `docs/standards/` | A rule governing how work is performed changed. |
 | `docs/architecture/` | System design, components, or data flow changed. |
 | `docs/decisions/` | A significant technical decision was made — record it as an ADR with context, alternatives, and consequences. |
 | `docs/changelog/` | A user-visible or release-relevant change was made. |
